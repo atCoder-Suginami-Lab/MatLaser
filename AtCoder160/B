@@ -1,0 +1,9 @@
+
+X = int(input())
+
+coin_500 = X // 500
+mod = X % 500
+
+coin_5 = mod // 5
+
+print(1000 * coin_500 + 5 * coin_5)

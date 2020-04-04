@@ -1,0 +1,21 @@
+
+N, M = map(int, input().split())
+A = list(map(int, input().split()))
+
+sum_A = sum(A)
+
+bool_list = []
+
+for i in range(len(A)):
+    if A[i] >= (sum_A / (4*M)):
+        bool_list.append("T")
+
+    else:
+        continue
+
+if bool_list.count("T") >= M:
+    print("Yes")
+
+else:
+    print("No")
+
